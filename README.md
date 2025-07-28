@@ -2,6 +2,8 @@
 
 一个基于 Vue 3 + Vite + Element Plus 开发的IPTV系统管理平台，提供直播源管理、EPG节目单、系统配置等功能。
 
+[在线页面展示🚀](https://mcspace-start.github.io/iptvSystem-pages/)
+
 ## 项目简介
 
 该项目是系统管理平台，用于管理和配置IPTV服务。主要功能包括:
