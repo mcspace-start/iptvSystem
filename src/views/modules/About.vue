@@ -56,7 +56,7 @@ const desc = `这是一个 IPTV 管理系统的前端页面，该项目基于 Vi
     <div class="links">
       <p class="link">
         <span class="label">github: </span>
-        <el-link type="primary" href="#" target="_blank"
+        <el-link type="primary" :href="githubUrl" target="_blank"
           ><span v-if="!isXs">{{ githubUrl }}</span
           ><span v-else>仓库链接...</span>
           <el-icon> <View /> </el-icon>
@@ -64,7 +64,7 @@ const desc = `这是一个 IPTV 管理系统的前端页面，该项目基于 Vi
       </p>
       <p class="link">
         <span class="label">gitee: </span>
-        <el-link type="primary" href="#" target="_blank"
+        <el-link type="primary" :href="giteeUrl" target="_blank"
           ><span v-if="!isXs">{{ giteeUrl }}</span
           ><span v-else>仓库链接...</span>
           <el-icon> <View /> </el-icon>
