@@ -1,0 +1,20 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --el-mask-color: rgba(255,255,255,0.8) !important;
+}
+
+/* semantic color variables for this project */
+/* :root {} */
+
+@media (prefers-color-scheme: dark) {
+  :root {}
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  list-style: none;
+}

@@ -1,0 +1,124 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  height: 100vh;
+  font-weight: normal;
+  overflow: hidden;
+  background: #f5f5f5;
+
+}
+
+/* system页下tvb-config页面下card-header */
+.tvb-config-card-header {
+  background-color: var(--el-color-danger-light-8);
+}
+
+.iptv-config-card-header {
+  background-color: var(--el-color-primary-light-8);
+}
+
+.scheduled-task-table-header {
+  color: #222;
+  box-shadow: 1px 1px 0 #000 inset;
+
+  .cell {
+    font-weight: bold;
+  }
+}
+
+/* 自定义dialog样式 */
+.el-dialog.my-dialog {
+  max-width: 85%;
+  padding: 0;
+
+  .el-dialog__header {
+    background-color: var(--el-color-info);
+    color: #fff;
+    padding: 0;
+    padding-left: 16px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+    .dialog-title {
+      display: flex;
+      align-items: center;
+    }
+
+    .el-icon {
+      margin-right: 6px;
+    }
+
+    .el-dialog__close {
+      color: #fff;
+    }
+
+    .el-dialog__title {
+      color: #fff;
+    }
+
+    .el-dialog__headerbtn:hover .el-dialog__close {
+      color: var(--el-color-primary);
+    }
+  }
+
+  .el-dialog__body {
+    padding: 16px;
+  }
+
+  .el-dialog__footer {
+    padding: 16px;
+    padding-top: 0;
+  }
+
+  /* 针对不同类型 */
+  &.danger {
+    .el-dialog__header {
+      background: var(--el-color-danger);
+    }
+  }
+
+  &.primary {
+    .el-dialog__header {
+      background-color: var(--el-color-primary-dark-2);
+
+    }
+  }
+
+  &.warning {
+    .el-dialog__header {
+      background-color: var(--el-color-warning);
+    }
+  }
+}
+
+/* iptv 下dialog */
+.dialog-max-height {
+  background-color: pink;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+
+  .el-dialog__body {
+    flex: 1;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+
+  .el-dialog__header {
+    flex: 0 0 48px;
+  }
+
+  .el-dialog__footer {
+    /* flex: 0 0 32px; */
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dialog-max-height {
+    max-height: 60%;
+  }
+}
